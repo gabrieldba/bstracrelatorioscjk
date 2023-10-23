@@ -273,8 +273,8 @@
                     data_final: dataFinal
                 };
 
-                // Realize a solicitação POST para o servidor do bot
-                fetch("http://31.220.57.186:42056/1eb932fc-392b-4683-af54-1161eb27e4dd/", {
+                // Realize a solicitação POST para o servidor especificado no atributo "action" do formulário
+                fetch(formulario.action, {
                     method: "POST",
                     body: JSON.stringify(data), // Você pode ajustar o formato dos dados conforme necessário
                     headers: {

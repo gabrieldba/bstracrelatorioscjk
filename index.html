@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <style>
-	    
+        <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #000000;
-            color: white;
+            font-family: 'Inter', sans-serif;
+            background-color: #0D1117; /* Cor de fundo do GitHub Modo Escuro */
+            color: #c9d1d9; /* Cor do texto no GitHub Modo Escuro */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -28,23 +27,25 @@
 
         .input-group label {
             margin-bottom: 5px;
-            color: #FFFFFF;
+            color: #c9d1d9; /* Cor do texto no GitHub Modo Escuro */
         }
 
         .input-group input {
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid #444d56; /* Cor da borda no GitHub Modo Escuro */
             border-radius: 5px;
             font-size: 16px;
             transition: all 0.3s ease-in-out;
             width: 100%;
             box-sizing: border-box;
+            background-color: #0D1117; /* Cor de fundo do GitHub Modo Escuro */
+            color: #c9d1d9; /* Cor do texto no GitHub Modo Escuro */
         }
 
         .input-group input[type="submit"] {
-            width: 40%; /* largura do botão reduzida para 60% */
+            width: 40%;
             margin-top: 20px;
-            background: linear-gradient(to right, #FF7F00, #FF5500); /* gradiente de cores adicionado */
+            background: linear-gradient(to right, #FF7F00, #FF5500);
             color: white;
             cursor: pointer;
             transition: background-color 0.3s ease;
@@ -52,17 +53,20 @@
             border-radius: 5px;
             font-size: 18px;
             border: none;
-            display: block; /* necessário para centralizar o botão */
-            margin-left: auto; /* centralizar o botão */
-            margin-right: auto; /* centralizar o botão */
-			animation: buttonFadeInAnimation 1s ease-in;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            animation: buttonFadeInAnimation 1s ease-in;
+            background-color: #0D1117; /* Cor de fundo do GitHub Modo Escuro */
+            color: #c9d1d9; /* Cor do texto no GitHub Modo Escuro */
         }
-		.input-group input[type="submit"]:hover {
-             animation: buttonBackgroundAnimation 0.3s ease;
-             box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-       }
-		
-		.logo {
+
+        .input-group input[type="submit"]:hover {
+            animation: buttonBackgroundAnimation 0.3s ease;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .logo {
             width: 8%;
             text-align: center;
             margin-bottom: 20px;

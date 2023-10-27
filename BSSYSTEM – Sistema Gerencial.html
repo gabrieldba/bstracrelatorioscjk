@@ -713,6 +713,24 @@ var actionbardata = {"siteID":"224938940","postID":"0","siteURL":"http:\/\/bssys
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+.menu ul{
+  list-style: none; /* Remover os marcadores de lista */
+  padding: 0;
+  margin: 0;
+    
+}
+
+.menu li {
+  display: inline; /* Fazer com que os elementos <li> fiquem um ao lado do outro */
+  margin-right: 10px; /* Adicionar um espaçamento entre os elementos, se desejado */
+}
+
+.menu li a {
+  text-decoration: none; /* Remover a formatação padrão do link */
+  padding: 5px 10px; /* Adicionar preenchimento para melhorar a aparência */
+  border: 1px solid #000; /* Adicionar uma borda para destacar os itens do menu */
+}
+
 </style>
 <link rel="icon" href="https://bssystem6.files.wordpress.com/2023/10/site-logo.png?w=32" sizes="32x32">
 <link rel="icon" href="https://bssystem6.files.wordpress.com/2023/10/site-logo.png?w=152" sizes="192x192">
@@ -732,12 +750,12 @@ var actionbardata = {"siteID":"224938940","postID":"0","siteURL":"http:\/\/bssys
 
 <!-- CONTAINER DE NAVEGAÇÂO!-->
 <div class="wp-block-group is-content-justification-space-between is-nowrap is-layout-flex wp-container-4 wp-block-group-is-layout-flex">
-    <nav class="has-small-font-size wp-block-navigation has-small-font-size is-content-justification-right is-layout-flex wp-container-3 wp-block-navigation-is-layout-flex" aria-label="Cabeçalho navegação">
+    <nav class="menu has-small-font-size wp-block-navigation has-small-font-size is-content-justification-right is-layout-flex wp-container-3 wp-block-navigation-is-layout-flex" aria-label="Cabeçalho navegação">
         <ul class="wp-block-navigation__container has-small-font-size">
             <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link">
                 <a href="javascript:void(0);" id="relatorios-link">Relatórios</a>
             </li>
-            <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link">
+            <li class="menu has-small-font-size wp-block-navigation-item wp-block-navigation-link">
                 <a class="wp-block-navigation-item__content" href="https://youtube.com/#">
                     <span class="wp-block-navigation-item__label">Logout</span>
                 </a>
